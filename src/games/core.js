@@ -41,7 +41,7 @@ module.exports = function(bc) {
     bc.serverVersion = null;
 
     bc.on("login", function() {
-        
+
         // Enable events
         bc.eventsEnabled(true, function(err, enabled) {});
 

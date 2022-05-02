@@ -19,10 +19,10 @@
  * @param {!BattleCon} bc
  */
 module.exports = function(bc) {
-    
+
     // Extends core
     bc.use("core");
-    
+
     // Parse events
     bc.on("event", function(msg) {
         switch (msg.data[0]) {
@@ -33,10 +33,10 @@ module.exports = function(bc) {
                 bc.emit("player.authenticated", /* name */ msg.data[1]);
                 break;
             case "player.onLeave":
-                bc.emit("player.leave", /* name */ msg.data[1], /* info */ bc.tabulate(msg.data, 2)[0]);
+                bc.emit("player.leave", /* name */ msg.data[1], /* info */ msg.data);
                 break;
             case "player.onSpawn":
-                bc.emit("player.spawn", /* name */ msg.data[1], /* team */ parseInt(msg[2], 10));
+                bc.emit("player.spawn", /* name */ msg.data[1], /* team */ parseInt(msg.data[2], 10));
                 break;
             case "player.onSquadChange":
                 bc.emit("player.squadChange", /* name */ msg.data[1], /* team */ parseInt(msg.data[2], 10), /* squad */ parseInt(msg.data[3], 10));
@@ -69,5 +69,5 @@ module.exports = function(bc) {
                 break;
         }
     });
-    
+
 };
