@@ -128,7 +128,7 @@ module.exports = function(bc) {
      * @param {function(Error, Array.<Object.<string,string>>=)} callback Callback
      */
     bc.listPlayers = function(callback) {
-        bc.exec(["listPlayers", "all"], function(err, res) { // BF4-like
+        bc.exec(["admin.listPlayers", "all"], function(err, res) { // BF4-like
             if (err) {
                 bc.exec(["listPlayers"], function(err2, res2) { // Possible fallback
                     if (err2) {
