@@ -2,14 +2,14 @@
     "name": "battlecon",
     "description": "A Battlefield / Frostbite engine RCON layer on node.js",
     "author": "Daniel Wirtz <dcode@dcode.io>",
-    "version": "0.3.0",
+    "version": "0.2.1",
     "main": "src/BattleCon.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dcodeIO/BattleCon.git"
+        "url": "https://github.com/EZSCALE/BattleCon.git"
     },
     "bugs": {
-        "url": "https://github.com/dcodeIO/BattleCon/issues"
+        "url": "https://github.com/EZSCALE/BattleCon/issues"
     },
     "keywords": ["rcon", "utility", "frostbite", "battlefield"],
     "license": "Apache-2.0",
