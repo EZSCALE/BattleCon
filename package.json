@@ -2,7 +2,7 @@
     "name": "@ezscale/battlecon",
     "description": "A Battlefield / Frostbite engine RCON layer on node.js",
     "author": "Daniel Wirtz <dcode@dcode.io>",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "main": "src/BattleCon.js",
     "repository": {
         "type": "git",
